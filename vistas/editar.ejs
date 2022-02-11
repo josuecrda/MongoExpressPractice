@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Editar producto existente </h1>
+    <form action="/productos/<%=producto.id%>?_method=PUT" method="POST">
+        <label for="nombre"> Nombre del producto</label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre del producto" value="<%=producto.nombre%>">
+        <label for="precio"> Precio del producto</label>
+        <input type="number" name="precio" id="precio" placeholder="precio" value="<%=producto.precio%>">
+        <label for="categoria"> Categoria del producto</label>
+        
+        <select name= "categoria" id="categoria"> 
+            <option value="fruta"> Fruta </option>
+            <option value="vegetal"> Vegetal </option>
+            <option value="lacteos"> Lacteos </option>
+
+        </select>
+        
+
+        <button> Agregar </button>
+
+    </form>
+
+    <a href= "/productos/<%=producto.id%>/editar ">  Cancelar Edición </a>
+
+</body>
+</html>

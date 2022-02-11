@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Super Productos</title>
+</head>
+<body>
+    <h1> Lista de todos los productos </h1>
+    <ul>
+        <% for(let producto of productos) { %>
+        <li> <a href="/productos/<%=producto._id%> "><%= producto.nombre %> </li>
+    <% } %>
+
+    </ul>
+</body>
+</html>
