@@ -53,7 +53,7 @@ app.get("/productos/:id", async (req, res) => {
     console.log(producto);
     res.render("./busqueda", { producto })
 })
-
+//Hey
 
 
 app.get("/productos/:id/editar", async (req, res) => {
